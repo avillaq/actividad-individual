@@ -55,15 +55,13 @@ int main() {
 	Vector2D vector3 = vector1 + vector2;
 	cout << "operator+: la suma de los vectores -> "; vector3.mostrarVector();
 	
-	
-	
 	// lambda
 	double umbral = 50.5; 
 	double magnitud = calcularMagnitud(vector3);
 	auto supera = [] (double mag, double umb) { return mag > umb; };
 	string resp = supera(magnitud, umbral) ? "SI" : "NO";
 	
-	cout<<"lambda: la magnitud "<<magnitud<<" "<<resp<<" supera el umbral "<<umbral << "\n";
+	cout << "lambda: la magnitud " << magnitud << " " << resp << " supera el umbral " << umbral << "\n";
 
 	return 0;
 }
